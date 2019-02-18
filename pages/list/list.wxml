@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<import src="/pages/template/list-template.wxml"></import>
+<view>
+  <swiper catchtap='carouselToDetail' indicator-dots autoplay circular indicator-color="yellowgreen" indicator-active-color="orange">
+     <swiper-item wx:for="{{iamgeurls}}" wx:key="{{index}}">
+        <image data-index="{{index}}" src="{{item}}"></image>
+     </swiper-item>
+  </swiper>
+  <block wx:for="{{listArr}}" wx:key="{{index}}">
+    <view data-index="{{index}}" catchtap='toDetail'>
+      <template is="listTemplate" data="{{item}}"/>
+    </view>
+  </block>
+</view>
