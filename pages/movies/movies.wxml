@@ -1,4 +1,5 @@
 <!--pages/movies/movies.wxml-->
+<view class='refresh'><span></span></view>
 <navigator url='/pages/movieDetail/movieDetail?index={{index}}' wx:for='{{moviesArr}}' wx:key='{{index}}'>
   <view class='moviesContainer'>
     <image class='movieImg' src='{{item.images.large}}'></image>
@@ -10,3 +11,9 @@
     <text class='movie_rating'>{{item.rating.average}}</text>
   </view>
 </navigator>
+<view wx:if='{{loading}}'>
+  <text class='loading'>加载中...</text>
+</view>
+<view wx:if='{{loaded}}'>
+  <text class='loaded'>没有新内容喽!</text>
+</view>

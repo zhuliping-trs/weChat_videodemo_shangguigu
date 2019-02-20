@@ -1,4 +1,5 @@
-<template name="listTemplate">
+<!-- 使用模板 方法 <template is="listTemplate" data="{{item}}"/> -->
+<template name="listTemplate"> 
     <view class="tmpContainer">
         <view class="avatar_data">
             <image src="{{item.avatar}}"></image>

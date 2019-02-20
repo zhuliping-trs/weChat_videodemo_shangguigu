@@ -30,5 +30,6 @@
   },
   "requiredBackgroundModes": [
     "audio"
-  ]
+  ],
+  "debug": true
 }

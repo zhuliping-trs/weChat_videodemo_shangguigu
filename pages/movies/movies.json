@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "电影频道",
-  "navigationBarTextStyle": "white"
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
 }
